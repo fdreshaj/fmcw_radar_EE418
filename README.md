@@ -31,7 +31,10 @@ PA
     
 
 Dir Coupler 
-
     FPC07181 20GHz ~ 40GHz 20dB 0.3dB IL, 15 dB RL
+
+ADC
+
+    AD4080 20 Bit 40 MSPS Differential SAR 
 
 
