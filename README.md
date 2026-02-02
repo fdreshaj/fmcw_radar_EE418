@@ -37,4 +37,7 @@ ADC
 
     AD4080 20 Bit 40 MSPS Differential SAR 
 
+LNA
+	PMA3-24323LN+ 24-32 GHz, fluctuates around 14.5 to 15.1 dB
+	Operating Vs 4.75-5.25
 
