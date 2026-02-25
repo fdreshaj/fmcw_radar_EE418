@@ -42,7 +42,14 @@ LNA
 	PMA3-24323LN+ 24-32 GHz, fluctuates around 14.5 to 15.1 dB
 	Operating Vs 4.75-5.25
 
+TX Mixer
+
+	ADAR2001 In 2.5-10 GHz
+	2.5V analog supply, 1.8 digital supply, 4x Freq 
+	Differential
+
 RX Mixer
 
 	ADAR2004 RF In 10-40 GHz, LO In  2.4-10.1 GHz, IF Out  0-800 MHz
-	Gain Range 21-41 dB
+	2.5V analog supply, 1.8V digital, Gain Range 21-41 dB
+	Differential
