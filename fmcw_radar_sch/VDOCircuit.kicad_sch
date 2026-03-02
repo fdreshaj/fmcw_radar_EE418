@@ -1,0 +1,11 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "7a53af00-a200-4e5f-994e-994f0cdb81a1")
+	(paper "A4")
+	(title_block
+		(title "FMCW Radar")
+	)
+	(lib_symbols)
+)
