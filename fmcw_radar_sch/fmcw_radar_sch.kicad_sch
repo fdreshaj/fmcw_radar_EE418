@@ -6,7 +6,131 @@
 	(paper "A4")
 	(lib_symbols)
 	(sheet
-		(at 57.15 76.2)
+		(at 132.334 101.854)
+		(size 41.656 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "30da698b-30e2-4529-9d15-1e8bb80cecea")
+		(property "Sheetname" "DAC"
+			(at 132.334 101.1424 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "DAC.kicad_sch"
+			(at 132.334 127.8386 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "fmcw_radar_sch"
+				(path "/435eb955-ea36-4ca2-96a0-71f0d07942fb"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 45.974 102.362)
+		(size 34.544 27.94)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "622165ea-e76d-4910-b64a-29860b9db6ac")
+		(property "Sheetname" "Tx"
+			(at 45.974 101.6504 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "tx_radar.kicad_sch"
+			(at 45.974 130.8866 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "Vpos" input
+			(at 45.974 110.236 180)
+			(uuid "ac4d7bcd-f1c7-4a5c-b6fc-402b37824f47")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Vpos1" input
+			(at 45.974 112.776 180)
+			(uuid "d548482d-128c-4af6-888f-3aa2c38b29e4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Vpos3" input
+			(at 45.974 115.316 180)
+			(uuid "cb11dec1-2af7-4307-aded-d6cebdbfa3e4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Vpos4" input
+			(at 45.974 117.856 180)
+			(uuid "8c3a190b-a1c0-419f-b934-da53509af3e1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "fmcw_radar_sch"
+				(path "/435eb955-ea36-4ca2-96a0-71f0d07942fb"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 43.434 50.546)
 		(size 35.052 32.766)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22,7 +146,7 @@
 		)
 		(uuid "7e2b7bd0-e0e9-406c-b1b8-cc5104f0bd15")
 		(property "Sheetname" "MCU"
-			(at 57.15 75.4884 0)
+			(at 43.434 49.8344 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31,7 +155,7 @@
 			)
 		)
 		(property "Sheetfile" "MCU.kicad_sch"
-			(at 57.15 109.5506 0)
+			(at 43.434 83.8966 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -48,7 +172,7 @@
 		)
 	)
 	(sheet
-		(at 165.1 76.2)
+		(at 130.81 49.53)
 		(size 40.132 31.496)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -64,7 +188,7 @@
 		)
 		(uuid "d1630b9a-4bb5-4641-bc1b-762a2a8515ab")
 		(property "Sheetname" "Synthesizer"
-			(at 165.1 75.4884 0)
+			(at 130.81 48.8184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -73,7 +197,7 @@
 			)
 		)
 		(property "Sheetfile" "Synth.kicad_sch"
-			(at 165.1 108.2806 0)
+			(at 130.81 81.6106 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -90,7 +214,7 @@
 		)
 	)
 	(sheet
-		(at 115.316 77.216)
+		(at 88.138 50.292)
 		(size 36.068 30.48)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -106,7 +230,7 @@
 		)
 		(uuid "f0357e24-73d4-40d3-a6c1-fc528169dba6")
 		(property "Sheetname" "Power System"
-			(at 115.316 76.5044 0)
+			(at 88.138 49.5804 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -115,7 +239,7 @@
 			)
 		)
 		(property "Sheetfile" "psu.kicad_sch"
-			(at 115.316 108.2806 0)
+			(at 88.138 81.3566 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -127,6 +251,48 @@
 			(project "fmcw_radar_sch"
 				(path "/435eb955-ea36-4ca2-96a0-71f0d07942fb"
 					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 87.63 101.6)
+		(size 36.83 27.94)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "f1085248-e19c-4ca7-adcb-8524a7e557b1")
+		(property "Sheetname" "Reciever"
+			(at 87.63 100.8884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "rx_radar.kicad_sch"
+			(at 87.63 130.1246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "fmcw_radar_sch"
+				(path "/435eb955-ea36-4ca2-96a0-71f0d07942fb"
+					(page "6")
 				)
 			)
 		)
