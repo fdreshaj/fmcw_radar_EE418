@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "FMCW_library")(type "KiCad")(uri "${KIPRJMOD}/FMCW_library.pretty")(options "")(descr ""))
+  (lib (name "FMCW")(type "KiCad")(uri "${KIPRJMOD}/FMCW.pretty")(options "")(descr ""))
+)
