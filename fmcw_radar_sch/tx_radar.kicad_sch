@@ -425,191 +425,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Switch:SW_Nidec_CAS-120A1"
-			(pin_names
-				(offset 1)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "SW"
-				(at 0 4.318 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "SW_Nidec_CAS-120A1"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Button_Switch_SMD:Nidec_Copal_CAS-120A"
-				(at 0 -10.16 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.nidec-components.com/e/catalog/switch/cas.pdf"
-				(at 0 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Switch, single pole double throw"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "switch single-pole double-throw spdt ON-ON"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "*Nidec?Copal?CAS?120A*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SW_Nidec_CAS-120A1_0_1"
-				(circle
-					(center -2.032 0)
-					(radius 0.4572)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.651 0.254) (xy 1.651 2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 2.54)
-					(radius 0.4572)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 -2.54)
-					(radius 0.4572)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SW_Nidec_CAS-120A1_1_1"
-				(rectangle
-					(start -3.175 3.81)
-					(end 3.175 -3.81)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 2.54 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 2.54)
-					(name "C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "adar2001:ADAR2001ACCZ"
 			(pin_names
 				(offset 0.254)
@@ -2072,6 +1887,12 @@
 		(uuid "47270234-42f7-4874-85cf-252c005ab744")
 	)
 	(junction
+		(at 101.6 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4ac794a8-910b-4f6e-a1ab-a69b9eaf95dc")
+	)
+	(junction
 		(at 163.83 134.62)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2126,12 +1947,6 @@
 		(uuid "95438fe8-f104-4855-9ae3-e471e04c700a")
 	)
 	(junction
-		(at 101.6 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c48ff270-51b5-4f80-86c5-8fe85b886203")
-	)
-	(junction
 		(at 138.43 123.19)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2184,6 +1999,16 @@
 			(type default)
 		)
 		(uuid "0caf2135-9148-4d68-a13d-7626ff7c762a")
+	)
+	(wire
+		(pts
+			(xy 101.6 82.55) (xy 105.41 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12ccdd08-5068-4c21-baaf-719b513cd38a")
 	)
 	(wire
 		(pts
@@ -2297,7 +2122,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 82.55) (xy 105.41 82.55)
+			(xy 87.63 82.55) (xy 101.6 82.55)
 		)
 		(stroke
 			(width 0)
@@ -2344,16 +2169,6 @@
 			(type default)
 		)
 		(uuid "790456f7-5802-470e-b3a3-ea3d37dfc329")
-	)
-	(wire
-		(pts
-			(xy 87.63 82.55) (xy 101.6 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7a7ef179-caa2-4051-923f-93779c3477c1")
 	)
 	(wire
 		(pts
@@ -3330,77 +3145,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Nidec_CAS-120A1")
-		(at 40.64 119.38 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "36a8e7d4-a0d3-4c11-b12b-b6722e080f03")
-		(property "Reference" "SW2"
-			(at 40.64 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Nidec_CAS-120A1"
-			(at 40.64 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_SMD:Nidec_Copal_CAS-120A"
-			(at 40.64 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.nidec-components.com/e/catalog/switch/cas.pdf"
-			(at 40.64 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Switch, single pole double throw"
-			(at 40.64 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "536ab8bc-ff66-4d6f-ab9a-53a6f61b0bb4")
-		)
-		(pin "3"
-			(uuid "3201913a-d59d-4168-ac1a-3c7a01855d1c")
-		)
-		(pin "1"
-			(uuid "a9cba3ac-1194-4ee1-b13e-956959224f59")
-		)
-		(instances
-			(project ""
-				(path "/435eb955-ea36-4ca2-96a0-71f0d07942fb/622165ea-e76d-4910-b64a-29860b9db6ac"
-					(reference "SW2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_US")
 		(at 78.74 137.16 0)
 		(unit 1)
@@ -4145,75 +3889,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_US")
-		(at 101.6 86.36 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9b463826-2639-4ceb-b59f-704744244626")
-		(property "Reference" "C12"
-			(at 100.33 78.232 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1u"
-			(at 100.33 80.772 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 101.6 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 101.6 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "capacitor, US symbol"
-			(at 101.6 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1f86336f-6bc2-4aa9-bf13-12558af8d7c9")
-		)
-		(pin "2"
-			(uuid "e53dc06d-9772-44c0-88ca-52e518b51c06")
-		)
-		(instances
-			(project "fmcw_radar_sch"
-				(path "/435eb955-ea36-4ca2-96a0-71f0d07942fb/622165ea-e76d-4910-b64a-29860b9db6ac"
-					(reference "C12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 101.6 92.71 0)
 		(unit 1)
@@ -4340,6 +4015,75 @@
 			(project ""
 				(path "/435eb955-ea36-4ca2-96a0-71f0d07942fb/622165ea-e76d-4910-b64a-29860b9db6ac"
 					(reference "#PWR035")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_US")
+		(at 101.6 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c784c159-2870-4f1e-86df-65b171dc2db3")
+		(property "Reference" "C407"
+			(at 100.33 78.232 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u"
+			(at 100.33 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 101.6 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 101.6 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "capacitor, US symbol"
+			(at 101.6 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5f6cb535-4006-486e-b567-f437d0cdc65d")
+		)
+		(pin "2"
+			(uuid "bb2cc39c-58b3-4f9e-aa40-e4a0080f1a3c")
+		)
+		(instances
+			(project "fmcw_radar_sch"
+				(path "/435eb955-ea36-4ca2-96a0-71f0d07942fb/622165ea-e76d-4910-b64a-29860b9db6ac"
+					(reference "C407")
 					(unit 1)
 				)
 			)
