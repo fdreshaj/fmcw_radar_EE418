@@ -6606,7 +6606,7 @@
 		(uuid "fe59017d-4363-4540-8e1b-a794e6b4a323")
 	)
 	(label "SW"
-		(at 238.76 30.48 0)
+		(at 237.49 30.48 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6624,6 +6624,16 @@
 			(justify left bottom)
 		)
 		(uuid "3c117579-ddb7-4723-be56-29e5e27c5bf4")
+	)
+	(label "V_PREfilt"
+		(at 198.12 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "422205a2-ecd4-4b26-ad1c-feb7c79a3153")
 	)
 	(label "CC_1_pulldown"
 		(at 69.85 62.23 0)

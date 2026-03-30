@@ -1928,6 +1928,28 @@
 		)
 		(uuid "b992332f-c7c7-48a7-95c3-4dd25dedc40b")
 	)
+	(global_label "MOSI2"
+		(shape input)
+		(at 57.15 57.15 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0897db26-9099-458c-9173-49c6f2dbd38b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 48.3591 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "DAC_NLDAC"
 		(shape input)
 		(at 57.15 72.39 180)
@@ -1950,7 +1972,7 @@
 			)
 		)
 	)
-	(global_label "SPI2_SCK"
+	(global_label "SCK2"
 		(shape input)
 		(at 57.15 60.96 180)
 		(fields_autoplaced yes)
@@ -1960,53 +1982,9 @@
 			)
 			(justify right)
 		)
-		(uuid "4da8acfa-f92f-4849-a8a8-27c14acdf97f")
+		(uuid "98d76567-2b74-4564-8ea0-61504859b027")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 45.8081 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SPI2_NSS"
-		(shape input)
-		(at 57.15 64.77 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "8eefb470-c519-47f6-ad5d-a5b6e1048479")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 45.8081 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SPI2_MOSI"
-		(shape input)
-		(at 57.15 57.15 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "d0cf5c35-d4e5-4acb-996d-5e24975c4702")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 44.9682 57.0706 0)
+			(at 49.2058 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2029,6 +2007,28 @@
 		(uuid "d349cd35-6f6e-458b-b9e3-d41a40b556d9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 45.3242 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "NSS2"
+		(shape input)
+		(at 57.15 64.77 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e3a38fc4-3af2-4ada-b619-4b9e81c4875a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 49.2058 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
