@@ -2226,7 +2226,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Coaxial:SMA_Amphenol_132134-10_Vertical"
 			(at 181.61 121.92 0)
 			(effects
 				(font
