@@ -2,7 +2,7 @@
 	(version 20250114)
 	(generator "eeschema")
 	(generator_version "9.0")
-	(uuid "e7eb698f-8b34-487a-bfc8-84acf6f59fdd")
+	(uuid "a25d7846-706a-4a71-9a1f-d1e761e5cbde")
 	(paper "A4")
 	(lib_symbols
 		(symbol "Connector:Conn_01x05_Pin"
@@ -5996,7 +5996,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LGA_CC_48_2_ADI"
+		(property "Footprint" "RF_extra:LGA_CC_48_2_ADI"
 			(at 95.25 57.15 0)
 			(effects
 				(font
