@@ -2917,6 +2917,28 @@
 			)
 		)
 	)
+	(global_label "RF8N"
+		(shape input)
+		(at 109.22 80.01 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2231e7ed-43e0-4476-ba6a-9a80678b08c9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 101.3362 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "MADV"
 		(shape input)
 		(at 113.03 74.93 180)
@@ -3507,28 +3529,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "RF8P"
-		(shape input)
-		(at 109.22 80.01 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ff2d127a-ab6a-4f79-ac27-c65f81acbca5")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 101.3967 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
