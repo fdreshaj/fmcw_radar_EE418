@@ -7037,7 +7037,7 @@
 				)
 			)
 		)
-		(property "Footprint" "nonkicad:DYD0005A-MFG"
+		(property "Footprint" "RF_extra:DYD0005A-MFG"
 			(at 170.18 123.19 0)
 			(effects
 				(font
@@ -10470,7 +10470,7 @@
 				)
 			)
 		)
-		(property "Footprint" "nonkicad:MP05A"
+		(property "Footprint" "RF_extra:DNT12_TEX"
 			(at 49.53 123.19 0)
 			(effects
 				(font
