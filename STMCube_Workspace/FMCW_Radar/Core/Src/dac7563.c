@@ -1,0 +1,34 @@
+/*
+ * dac7563.c
+ *
+ *  Created on: Apr 2, 2026
+ *      Author: justi
+ */
+#include "dac7563.h"
+
+void DAC7563_Write(SPI_HandleTypeDef *hspi, uint8_t command, uint16_t value)
+{
+    uint8_t tx[3];
+    tx[0] = command;
+    tx[1] = (value >> 8) & 0xFF;
+    tx[2] = value & 0xFF;
+
+    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_12, GPIO_PIN_RESET); // CS low
+    HAL_SPI_Transmit(hspi, tx, 3, HAL_MAX_DELAY);
+    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_12, GPIO_PIN_SET);   // CS high
+
+    // Pulse LDAC low to update output
+    HAL_GPIO_WritePin(DAC_LDAC_PORT, DAC_LDAC_PIN, GPIO_PIN_RESET); // LDAC low
+    HAL_GPIO_WritePin(DAC_LDAC_PORT, DAC_LDAC_PIN, GPIO_PIN_SET);   // LDAC high
+}
+
+void DAC7563_Init(SPI_HandleTypeDef *hspi)
+{
+	// Initialize LDAC high
+	HAL_GPIO_WritePin(DAC_LDAC_PORT, DAC_LDAC_PIN, GPIO_PIN_SET);
+    // Power up both DACs
+    DAC7563_Write(hspi, 0x20, 0x0003);
+    // Enable internal reference
+    DAC7563_Write(hspi, 0x38, 0x0001);
+}
+

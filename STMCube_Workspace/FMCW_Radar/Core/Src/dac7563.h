@@ -1,0 +1,26 @@
+/*
+ * dac7563.h
+ *
+ *  Created on: Apr 2, 2026
+ *      Author: justi
+ */
+
+#ifndef SRC_DAC7563_H_
+#define SRC_DAC7563_H_
+
+#include "stm32f1xx_hal.h"
+
+/* Pin Definitions */
+#define DAC_LDAC_PIN    GPIO_PIN_10
+#define DAC_LDAC_PORT   GPIOB
+
+/* DAC7563 Commands */
+#define DAC_WRITE_UPDATE_A  0x18
+#define DAC_WRITE_UPDATE_B  0x19
+#define DAC_FULL_SCALE      4095
+
+/* Function Prototypes */
+void DAC7563_Init(SPI_HandleTypeDef *hspi);
+void DAC7563_Write(SPI_HandleTypeDef *hspi, uint8_t command, uint16_t value);
+
+#endif /* SRC_DAC7563_H_ */
