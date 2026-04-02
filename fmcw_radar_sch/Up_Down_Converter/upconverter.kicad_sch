@@ -2463,6 +2463,26 @@
 	)
 	(wire
 		(pts
+			(xy 196.85 40.64) (xy 196.85 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "789006eb-93a1-4e43-b2e6-2885d9959121")
+	)
+	(wire
+		(pts
+			(xy 196.85 50.8) (xy 196.85 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "852b5c94-6d89-47bc-a7b0-638e98a0aaec")
+	)
+	(wire
+		(pts
 			(xy 101.6 95.25) (xy 106.68 95.25)
 		)
 		(stroke
@@ -2773,6 +2793,16 @@
 	)
 	(wire
 		(pts
+			(xy 191.77 40.64) (xy 191.77 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "deea478d-0a42-4da0-a0b0-4a824ae2652b")
+	)
+	(wire
+		(pts
 			(xy 208.28 107.95) (xy 198.12 107.95)
 		)
 		(stroke
@@ -2810,6 +2840,16 @@
 			(type default)
 		)
 		(uuid "edf7f0f0-e2dd-454a-852b-f45c6ca1eecd")
+	)
+	(wire
+		(pts
+			(xy 191.77 50.8) (xy 191.77 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f41b989f-0db1-4796-a592-5535563d7677")
 	)
 	(wire
 		(pts
@@ -3095,7 +3135,7 @@
 	)
 	(global_label "RFO1-"
 		(shape input)
-		(at 191.77 40.64 270)
+		(at 191.77 53.34 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3105,7 +3145,7 @@
 		)
 		(uuid "6aa67b5e-fe9c-475e-bdec-c5bca0e8e871")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 191.77 50.0962 90)
+			(at 191.77 62.7962 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3447,7 +3487,7 @@
 	)
 	(global_label "RFO1+"
 		(shape input)
-		(at 196.85 40.64 270)
+		(at 196.85 53.34 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3457,7 +3497,7 @@
 		)
 		(uuid "e3bb0f25-3620-45b2-8132-ce656edc6d7e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 196.85 50.0962 90)
+			(at 196.85 62.7962 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3598,6 +3638,76 @@
 			(project "Up_Down_Converter"
 				(path "/ecdac040-d2fc-4837-bd77-36dd5bdda894/50510f17-5706-41de-ab86-eef6035eb405"
 					(reference "C27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 196.85 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0fe86445-cbad-45c3-ba07-27f100da8a06")
+		(property "Reference" "C38"
+			(at 200.66 45.7199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u"
+			(at 200.66 48.2599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 197.8152 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 196.85 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 196.85 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3265587e-c633-46f8-b33a-df89cc2643f1")
+		)
+		(pin "2"
+			(uuid "7fbc6194-4cb6-4d73-818a-91f61b0bf972")
+		)
+		(instances
+			(project "Up_Down_Converter"
+				(path "/ecdac040-d2fc-4837-bd77-36dd5bdda894/50510f17-5706-41de-ab86-eef6035eb405"
+					(reference "C38")
 					(unit 1)
 				)
 			)
@@ -4077,6 +4187,75 @@
 			(project "Up_Down_Converter"
 				(path "/ecdac040-d2fc-4837-bd77-36dd5bdda894/50510f17-5706-41de-ab86-eef6035eb405"
 					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 191.77 46.99 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5987fdd9-c36a-45ab-b2df-7207a0009eca")
+		(property "Reference" "C39"
+			(at 183.388 44.196 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1u"
+			(at 184.912 47.752 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 190.8048 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 191.77 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 191.77 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "731a9b76-9c31-42e2-a16c-749e8d2038ef")
+		)
+		(pin "2"
+			(uuid "0a0e9093-54f1-4229-870c-7a58948e9aa4")
+		)
+		(instances
+			(project "Up_Down_Converter"
+				(path "/ecdac040-d2fc-4837-bd77-36dd5bdda894/50510f17-5706-41de-ab86-eef6035eb405"
+					(reference "C39")
 					(unit 1)
 				)
 			)
