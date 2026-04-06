@@ -1750,6 +1750,16 @@
 	)
 	(wire
 		(pts
+			(xy 179.07 62.23) (xy 168.91 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c6411b6-b2c0-464c-9d38-3ee3ec64f53e")
+	)
+	(wire
+		(pts
 			(xy 64.77 87.63) (xy 71.12 87.63)
 		)
 		(stroke
@@ -2068,6 +2078,16 @@
 		)
 		(uuid "f747a463-38a5-4870-acb5-e82104198f06")
 	)
+	(wire
+		(pts
+			(xy 179.07 59.69) (xy 168.91 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fae3b19c-f314-47b3-9deb-16934c1793f0")
+	)
 	(global_label "RF16P"
 		(shape input)
 		(at 168.91 105.41 0)
@@ -2200,6 +2220,28 @@
 			)
 		)
 	)
+	(global_label "REFN"
+		(shape input)
+		(at 179.07 59.69 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "89e1f1be-bcd4-46cd-8ce7-5583f5250176")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 186.8933 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "RFAUX8N"
 		(shape input)
 		(at 102.87 102.87 180)
@@ -2268,7 +2310,7 @@
 	)
 	(global_label "REFP"
 		(shape input)
-		(at 168.91 62.23 0)
+		(at 179.07 62.23 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2277,27 +2319,7 @@
 		)
 		(uuid "d97e1df2-dd5c-4479-8ede-5836354ebab5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 168.91 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "REFN"
-		(shape input)
-		(at 168.91 59.69 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "db1dae79-d900-4420-9aa6-315d5a1e7415")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 168.91 59.69 0)
+			(at 179.07 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4125,7 +4147,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 87.63 61.468 90)
 			(effects
 				(font
@@ -5072,7 +5094,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 60.6552 57.15 0)
 			(effects
 				(font

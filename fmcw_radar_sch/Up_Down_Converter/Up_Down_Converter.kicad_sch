@@ -982,12 +982,6 @@
 		(color 0 0 0 0)
 		(uuid "43b6fe4b-7b69-49bc-8f26-805d599389f6")
 	)
-	(junction
-		(at 177.8 74.93)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fca8f47b-4b09-4abb-9469-8e06dffa54c6")
-	)
 	(wire
 		(pts
 			(xy 247.65 92.71) (xy 247.65 91.44)
@@ -1010,26 +1004,6 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 93.98) (xy 175.26 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "33d266fe-72c7-499d-8b3d-b2293888f866")
-	)
-	(wire
-		(pts
-			(xy 180.34 74.93) (xy 177.8 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "379d7603-f096-448d-9052-8070e8a7d457")
-	)
-	(wire
-		(pts
 			(xy 170.18 114.3) (xy 175.26 114.3)
 		)
 		(stroke
@@ -1047,16 +1021,6 @@
 			(type default)
 		)
 		(uuid "4c253a3f-7ad7-4f32-abdd-b032e645295b")
-	)
-	(wire
-		(pts
-			(xy 182.88 83.82) (xy 186.69 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5afe7e5f-b198-4eb6-bf50-cfac5e265ac4")
 	)
 	(wire
 		(pts
@@ -1090,36 +1054,6 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 74.93) (xy 182.88 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7ed0d2b5-dea4-4cd8-8e61-c1a852233295")
-	)
-	(wire
-		(pts
-			(xy 177.8 74.93) (xy 177.8 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7f750300-21d1-4c9b-81b7-51afa06f46ce")
-	)
-	(wire
-		(pts
-			(xy 170.18 96.52) (xy 175.26 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "84cba748-3b49-481b-bbfd-ae5f1901e7e1")
-	)
-	(wire
-		(pts
 			(xy 170.18 106.68) (xy 176.53 106.68)
 		)
 		(stroke
@@ -1130,16 +1064,6 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 88.9) (xy 176.53 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ab0d2eb0-0c80-4196-affb-89478f8743e5")
-	)
-	(wire
-		(pts
 			(xy 266.7 92.71) (xy 266.7 91.44)
 		)
 		(stroke
@@ -1147,16 +1071,6 @@
 			(type default)
 		)
 		(uuid "adc343ce-28be-4e0b-9b25-21e021690acf")
-	)
-	(wire
-		(pts
-			(xy 170.18 91.44) (xy 176.53 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c4c5276d-71d9-4216-87e9-b6284b82230a")
 	)
 	(wire
 		(pts
@@ -1220,28 +1134,6 @@
 			)
 		)
 	)
-	(global_label "MOSI2"
-		(shape input)
-		(at 175.26 96.52 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "51372471-9f44-4ec1-b6b6-6ba64543b86a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 184.0509 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "NSS"
 		(shape input)
 		(at 176.53 106.68 0)
@@ -1286,50 +1178,6 @@
 			)
 		)
 	)
-	(global_label "MISO2"
-		(shape input)
-		(at 175.26 93.98 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "6946281c-27bc-4a31-baa4-202c5c124fd4")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 184.0509 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SCK2"
-		(shape input)
-		(at 176.53 91.44 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "72b40b7b-b0cb-4a76-bd3b-b03bdcaf77f9")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 184.4742 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "NSS4"
 		(shape input)
 		(at 208.28 100.33 0)
@@ -1365,28 +1213,6 @@
 		(uuid "7d9bddf6-0279-4fe0-837e-a8a307a1e5cf")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 216.2242 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "NSS2"
-		(shape input)
-		(at 176.53 88.9 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "8af07110-b35b-472b-92ad-0d0bbc0242f6")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 184.4742 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1690,146 +1516,6 @@
 			(project "Up_Down_Converter"
 				(path "/ecdac040-d2fc-4837-bd77-36dd5bdda894"
 					(reference "J3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+24V")
-		(at 186.69 83.82 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "480c71d8-e481-4eeb-8a22-215cd211f1ef")
-		(property "Reference" "#PWR040"
-			(at 186.69 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+10V"
-			(at 186.69 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 186.69 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 186.69 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+24V\""
-			(at 186.69 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ffed043f-10a3-4868-b6db-dc6775e2da53")
-		)
-		(instances
-			(project "Up_Down_Converter"
-				(path "/ecdac040-d2fc-4837-bd77-36dd5bdda894"
-					(reference "#PWR040")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x04_Pin")
-		(at 165.1 91.44 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5d7a1a17-68a0-437c-8455-589674bea2c0")
-		(property "Reference" "J2"
-			(at 165.735 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x04_Pin"
-			(at 165.735 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
-			(at 165.1 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 165.1 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x04, script generated"
-			(at 165.1 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cb4a02ac-baeb-4719-b33e-7488b9fced3d")
-		)
-		(pin "3"
-			(uuid "be3d4e80-b41f-4f90-8003-dc0e542098f4")
-		)
-		(pin "2"
-			(uuid "be61b9ec-64fd-4344-b0a9-bb29b2fc50a6")
-		)
-		(pin "4"
-			(uuid "d948d117-e969-4e10-b83a-f4a47ba28b96")
-		)
-		(instances
-			(project "Up_Down_Converter"
-				(path "/ecdac040-d2fc-4837-bd77-36dd5bdda894"
-					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -2368,73 +2054,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 177.8 78.74 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "933aa864-779e-4d51-806b-3bebdeea6bf8")
-		(property "Reference" "#PWR04"
-			(at 177.8 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 177.8 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 177.8 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 177.8 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 177.8 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "06d4220a-aab1-418b-9cd5-8659ff512ead")
-		)
-		(instances
-			(project "Up_Down_Converter"
-				(path "/ecdac040-d2fc-4837-bd77-36dd5bdda894"
-					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
 		(at 247.65 104.14 0)
 		(unit 1)
@@ -2503,79 +2122,6 @@
 	)
 	(symbol
 		(lib_id "Connector:Barrel_Jack_Switch")
-		(at 180.34 67.31 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "96a36f77-6b11-4e29-b9e2-65d6aa72f222")
-		(property "Reference" "J9"
-			(at 185.42 66.0399 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Barrel_Jack_Switch"
-			(at 185.42 68.5799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 179.324 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 179.324 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "DC Barrel Jack with an internal switch"
-			(at 180.34 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3da3a4fc-b25d-4c48-916c-be6b2672ada2")
-		)
-		(pin "3"
-			(uuid "88252075-d26d-46e0-8057-7250d99d546f")
-		)
-		(pin "2"
-			(uuid "0f5c6277-9668-4670-986b-298581caf352")
-		)
-		(instances
-			(project "Up_Down_Converter"
-				(path "/ecdac040-d2fc-4837-bd77-36dd5bdda894"
-					(reference "J9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Barrel_Jack_Switch")
 		(at 210.82 69.85 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2602,7 +2148,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_BarrelJack:BarrelJack_Horizontal"
 			(at 209.804 71.12 0)
 			(effects
 				(font
