@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.0,
-          "height": 0.3,
-          "width": 0.3048
+          "drill": 0.8,
+          "height": 1.27,
+          "width": 2.54
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.0
+          "min_clearance": 0.5
         }
       },
       "diff_pair_dimensions": [
@@ -63,16 +63,16 @@
         "version": 2
       },
       "rule_severities": {
-        "annular_width": "warning",
-        "clearance": "warning",
+        "annular_width": "error",
+        "clearance": "error",
         "connection_width": "warning",
-        "copper_edge_clearance": "warning",
+        "copper_edge_clearance": "error",
         "copper_sliver": "warning",
         "courtyards_overlap": "error",
         "creepage": "error",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
-        "drill_out_of_range": "warning",
+        "drill_out_of_range": "error",
         "duplicate_footprints": "warning",
         "extra_footprint": "warning",
         "footprint": "error",
@@ -104,7 +104,7 @@
         "silk_over_copper": "warning",
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
-        "solder_mask_bridge": "warning",
+        "solder_mask_bridge": "error",
         "starved_thermal": "error",
         "text_height": "warning",
         "text_on_edge_cuts": "error",
@@ -188,18 +188,11 @@
       ],
       "track_widths": [
         0.0,
-        0.1,
-        0.1217,
-        0.156,
-        0.2,
         0.3,
-        0.4,
         0.5,
-        0.6,
-        0.7,
-        0.8,
-        0.9,
-        1.0
+        1.0,
+        2.0,
+        3.0
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -454,9 +447,9 @@
       "no_connect_connected": "warning",
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
-      "pin_not_driven": "warning",
-      "pin_to_pin": "ignore",
-      "power_pin_not_driven": "warning",
+      "pin_not_driven": "error",
+      "pin_to_pin": "warning",
+      "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
       "similar_labels": "warning",
@@ -465,7 +458,6 @@
       "single_global_label": "ignore",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
-      "undefined_netclass": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
       "wire_dangling": "error"
@@ -476,7 +468,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Up_Down_Converter.kicad_pro",
+    "filename": "Power_Delivery.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -636,40 +628,12 @@
   },
   "sheets": [
     [
-      "ecdac040-d2fc-4837-bd77-36dd5bdda894",
+      "08ae3e8a-4a7a-449f-b813-b62041b86f2d",
       "Root"
     ],
     [
-      "14e8dd72-d006-4ebe-b338-998bd9f50157",
-      "Power"
-    ],
-    [
-      "50510f17-5706-41de-ab86-eef6035eb405",
-      "Upconverter"
-    ],
-    [
-      "061d5f80-e8b9-4c08-a275-e384bf63be5f",
-      "Downconverter"
-    ],
-    [
-      "b354f215-8b19-442f-bb4f-899736cc8118",
-      "Synthesizer"
-    ],
-    [
-      "f764a923-393a-414b-83dc-534a9768d12d",
-      "synth Power"
-    ],
-    [
-      "ff92a75f-d023-478e-8679-15086c6dbc7b",
-      "biasing"
-    ],
-    [
-      "f138b826-9825-4480-93b4-9533ce8c6a2f",
-      "Reference Clock"
-    ],
-    [
-      "9027d12d-f2af-48cf-9393-d8a9667521a1",
-      "Charge Pump Loop filter"
+      "e7a45537-2f94-47aa-80ce-65b0a9060d59",
+      "Load Switch"
     ]
   ],
   "text_variables": {}
