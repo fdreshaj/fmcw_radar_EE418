@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 1.0,
-          "height": 1.7,
-          "width": 1.7
+          "drill": 0.0,
+          "height": 1.27,
+          "width": 1.905
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -58,7 +58,36 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "shorting_items|70220000|125620000|1ec9fa9a-5ac4-4959-9182-93b1c10e1bb3|657ee83b-3f47-4998-a235-9d3b47c387fb",
+          ""
+        ],
+        [
+          "shorting_items|70250000|124780000|05570a03-23eb-4853-a5c0-f97eceef4b00|1ec9fa9a-5ac4-4959-9182-93b1c10e1bb3",
+          ""
+        ],
+        [
+          "shorting_items|71220000|125090000|1ec9fa9a-5ac4-4959-9182-93b1c10e1bb3|fb1799ad-d0e5-4405-9777-5733cb69ed4b",
+          ""
+        ],
+        [
+          "shorting_items|72470000|125650000|1ec9fa9a-5ac4-4959-9182-93b1c10e1bb3|27ab465c-b794-48ed-884f-5ce711cd4d3e",
+          ""
+        ],
+        [
+          "shorting_items|72480000|124970000|1ec9fa9a-5ac4-4959-9182-93b1c10e1bb3|4043a8dc-0e88-457c-b16d-b7da0adc3b41",
+          ""
+        ],
+        [
+          "shorting_items|72824800|124400300|1ec9fa9a-5ac4-4959-9182-93b1c10e1bb3|5fafefb0-2fc5-47f8-832a-786c680f0d82",
+          ""
+        ],
+        [
+          "shorting_items|72824800|124400300|1ec9fa9a-5ac4-4959-9182-93b1c10e1bb3|df5759fc-9c9c-4d75-82f7-4080250fd568",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -472,7 +501,9 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
+    "pinned_footprint_libs": [
+      "RF_extra"
+    ],
     "pinned_symbol_libs": []
   },
   "meta": {
@@ -585,12 +616,30 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },

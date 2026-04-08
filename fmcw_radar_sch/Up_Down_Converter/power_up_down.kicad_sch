@@ -5449,7 +5449,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 261.62 36.83 0)
 			(effects
 				(font
@@ -7485,7 +7485,7 @@
 				)
 			)
 		)
-		(property "Footprint" "RF_extra:DNT12_TEX"
+		(property "Footprint" "RF_extra:MP05A"
 			(at 58.42 121.92 0)
 			(effects
 				(font
@@ -7632,7 +7632,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 270.51 36.83 0)
 			(effects
 				(font

@@ -1,4 +1,4 @@
-25616889593751292
+25629315285540213
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -91504,12 +91504,61 @@ TESEO-LIV3R
 18
 18
 RF_extra
+BEL_142-1701-831
+
+
+0
+13
+13
+RF_extra
+CC-48-4_ADI
+
+ADF4372BCCZ 
+0
+49
+49
+RF_extra
+DNT12_TEX
+
+LP38798SD-ADJ/NOPB 
+0
+13
+13
+RF_extra
+DYD0005A-MFG
+
+TLV75533PDYDR 
+0
+9
+9
+RF_extra
 IFA_2.45_TI
 
 
 0
 2
 2
+RF_extra
+LGA-CC-40-7_ADI
+
+ADAR2001ACCZ 
+0
+44
+44
+RF_extra
+LGA_CC_48_2_ADI
+
+ADAR2004ACCZ 
+0
+52
+52
+RF_extra
+MP05A
+
+LP3875EMP-2.5/NOPB 
+0
+4
+4
 RF_extra
 patch_ant_gnss
 

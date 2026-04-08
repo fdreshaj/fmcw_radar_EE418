@@ -722,7 +722,7 @@
 		(uuid "981dc5b9-5818-4110-b908-0f42b05ebf9c")
 	)
 	(junction
-		(at 185.42 52.07)
+		(at 187.96 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fe9a12d5-e000-4b7b-bea9-1a9505ffd42c")
@@ -769,7 +769,17 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 76.2) (xy 148.59 76.2)
+			(xy 158.75 74.93) (xy 158.75 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c9659c9-bd78-400d-a423-671070dda295")
+	)
+	(wire
+		(pts
+			(xy 153.67 80.01) (xy 151.13 80.01)
 		)
 		(stroke
 			(width 0)
@@ -799,7 +809,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 60.96) (xy 185.42 63.5)
+			(xy 187.96 60.96) (xy 187.96 63.5)
 		)
 		(stroke
 			(width 0)
@@ -879,7 +889,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 52.07) (xy 185.42 39.37)
+			(xy 187.96 52.07) (xy 187.96 39.37)
 		)
 		(stroke
 			(width 0)
@@ -919,6 +929,16 @@
 	)
 	(wire
 		(pts
+			(xy 181.61 52.07) (xy 187.96 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b174039d-8c02-40c9-989c-05c150f3aa87")
+	)
+	(wire
+		(pts
 			(xy 170.18 30.48) (xy 170.18 52.07)
 		)
 		(stroke
@@ -939,7 +959,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 76.2) (xy 148.59 77.47)
+			(xy 151.13 80.01) (xy 151.13 81.28)
 		)
 		(stroke
 			(width 0)
@@ -949,7 +969,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 53.34) (xy 185.42 52.07)
+			(xy 187.96 53.34) (xy 187.96 52.07)
 		)
 		(stroke
 			(width 0)
@@ -966,16 +986,6 @@
 			(type default)
 		)
 		(uuid "d1f2ef6e-dcd8-483e-aede-cdd2154c2b39")
-	)
-	(wire
-		(pts
-			(xy 181.61 52.07) (xy 185.42 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d49692ee-15ca-4d52-8339-fb4e2be5dbd4")
 	)
 	(global_label "RF16N"
 		(shape input)
@@ -1289,7 +1299,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 185.42 63.5 0)
+		(at 187.96 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1298,7 +1308,7 @@
 		(fields_autoplaced yes)
 		(uuid "43aecc30-031d-4a76-b876-d98897a17386")
 		(property "Reference" "#PWR0165"
-			(at 185.42 69.85 0)
+			(at 187.96 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1307,7 +1317,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 185.42 68.58 0)
+			(at 187.96 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1316,7 +1326,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 185.42 63.5 0)
+			(at 187.96 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1325,7 +1335,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 185.42 63.5 0)
+			(at 187.96 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1334,7 +1344,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 185.42 63.5 0)
+			(at 187.96 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1356,7 +1366,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 148.59 77.47 0)
+		(at 151.13 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1365,7 +1375,7 @@
 		(fields_autoplaced yes)
 		(uuid "5267b265-a498-43b3-9f95-9d2c3615fe14")
 		(property "Reference" "#PWR0163"
-			(at 148.59 83.82 0)
+			(at 151.13 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1374,7 +1384,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 148.59 82.55 0)
+			(at 151.13 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1383,7 +1393,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 148.59 77.47 0)
+			(at 151.13 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1392,7 +1402,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 148.59 77.47 0)
+			(at 151.13 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1401,7 +1411,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 148.59 77.47 0)
+			(at 151.13 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1449,7 +1459,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 171.1452 71.12 0)
 			(effects
 				(font
@@ -1520,7 +1530,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_Coaxial:SMA_Amphenol_132289_EdgeMount"
+		(property "Footprint" "RF_extra:BEL_142-1701-831"
 			(at 231.14 49.53 0)
 			(effects
 				(font
@@ -1648,7 +1658,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "pF"
+		(property "Value" "10 pF"
 			(at 135.89 60.9599 0)
 			(effects
 				(font
@@ -1657,7 +1667,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 133.0452 63.5 0)
 			(effects
 				(font
@@ -1701,7 +1711,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 185.42 57.15 0)
+		(at 187.96 57.15 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1710,7 +1720,7 @@
 		(fields_autoplaced yes)
 		(uuid "a6301266-21a1-47cc-9ea4-b42ae0f4d7b5")
 		(property "Reference" "C62"
-			(at 189.23 55.8799 0)
+			(at 191.77 55.8799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1719,7 +1729,7 @@
 			)
 		)
 		(property "Value" "10pF"
-			(at 189.23 58.4199 0)
+			(at 191.77 58.4199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1727,8 +1737,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 186.3852 60.96 0)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+			(at 188.9252 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1737,7 +1747,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 185.42 57.15 0)
+			(at 187.96 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1746,7 +1756,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 185.42 57.15 0)
+			(at 187.96 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1796,7 +1806,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 159.7152 71.12 0)
 			(effects
 				(font
@@ -1867,7 +1877,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_Coaxial:SMA_Amphenol_132289_EdgeMount"
+		(property "Footprint" "RF_extra:BEL_142-1701-831"
 			(at 170.18 83.82 0)
 			(effects
 				(font
@@ -1935,7 +1945,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 177.8 52.07 0)
 			(effects
 				(font
@@ -2003,7 +2013,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 142.24 52.07 0)
 			(effects
 				(font
@@ -2180,7 +2190,7 @@
 	)
 	(symbol
 		(lib_id "power:VDD")
-		(at 185.42 39.37 0)
+		(at 187.96 39.37 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2189,7 +2199,7 @@
 		(fields_autoplaced yes)
 		(uuid "eaa93d67-b7e1-4522-bba7-7a963ec2b784")
 		(property "Reference" "#PWR0164"
-			(at 185.42 43.18 0)
+			(at 187.96 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2198,7 +2208,7 @@
 			)
 		)
 		(property "Value" "VDD_X1"
-			(at 185.42 34.29 0)
+			(at 187.96 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2206,7 +2216,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 185.42 39.37 0)
+			(at 187.96 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2215,7 +2225,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 185.42 39.37 0)
+			(at 187.96 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2224,7 +2234,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 185.42 39.37 0)
+			(at 187.96 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2273,7 +2283,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_Coaxial:SMA_Amphenol_132289_EdgeMount"
+		(property "Footprint" "RF_extra:BEL_142-1701-831"
 			(at 213.36 46.99 0)
 			(effects
 				(font
@@ -2317,7 +2327,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_Coaxial")
-		(at 158.75 76.2 270)
+		(at 158.75 80.01 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2326,7 +2336,7 @@
 		(fields_autoplaced yes)
 		(uuid "f90aab17-1abf-4eef-b945-6d5ca475a92c")
 		(property "Reference" "J13"
-			(at 162.56 74.6124 90)
+			(at 162.56 78.4224 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2335,7 +2345,7 @@
 			)
 		)
 		(property "Value" "Conn_Coaxial"
-			(at 162.56 77.1524 90)
+			(at 162.56 80.9624 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2344,8 +2354,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_Coaxial:SMA_Amphenol_132289_EdgeMount"
-			(at 158.75 76.2 0)
+		(property "Footprint" "RF_extra:BEL_142-1701-831"
+			(at 158.75 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2354,7 +2364,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 158.75 76.2 0)
+			(at 158.75 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2363,7 +2373,7 @@
 			)
 		)
 		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
-			(at 158.75 76.2 0)
+			(at 158.75 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
