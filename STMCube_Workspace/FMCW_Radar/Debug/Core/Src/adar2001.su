@@ -1,0 +1,5 @@
+../Core/Src/adar2001.c:11:6:ADAR2001_WriteReg	24	static
+../Core/Src/adar2001.c:27:9:ADAR2001_ReadReg	40	static
+../Core/Src/adar2001.c:46:6:ADAR2001_EnableAllChannels	16	static
+../Core/Src/adar2001.c:53:6:ADAR2001_SetMultiplierBand	16	static
+../Core/Src/adar2001.c:58:6:ADAR2001_Init	16	static

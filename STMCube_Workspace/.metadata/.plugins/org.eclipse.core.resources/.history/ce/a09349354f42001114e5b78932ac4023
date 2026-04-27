@@ -1,0 +1,46 @@
+/*
+ * adf4372.c
+ *
+ *  Created on: Apr 21, 2026
+ *      Author: justi
+ */
+
+// adf4372.c
+#include "adf4372.h"
+#include "stm32f1xx_hal.h"
+// Define register values
+#define REG_00_VAL 0x10
+#define REG_10_VAL 0x
+
+
+
+void ADF4372_WriteReg(SPI_HandleTypeDef *hspi, uint16_t addr, uint8_t data)
+{
+    uint8_t tx[3];
+    tx[0] = (addr >> 8) & 0xFF;  // Address high byte
+    tx[1] = addr & 0xFF;          // Address low byte
+    tx[2] = data;                 // Data byte
+
+    HAL_GPIO_WritePin(NSS_ADF4372_GPIO_Port, NSS_ADF4372_Pin, GPIO_PIN_RESET);
+    HAL_SPI_Transmit(hspi, tx, 3, HAL_MAX_DELAY);
+    HAL_GPIO_WritePin(NSS_ADF4372_GPIO_Port, NSS_ADF4372_Pin, GPIO_PIN_SET);
+}
+
+void ADF4372_Init(SPI_HandleTypeDef *hspi)
+{
+    // Soft reset
+    ADF4372_WriteReg(hspi, 0x0000, 0x81);
+    HAL_Delay(10);
+    ADF4372_WriteReg(hspi, 0x0000, 0x00);
+
+    // Configure reference input
+    ADF4372_WriteReg(hspi, 0x0002, 0x08); // Set reference settings
+
+    // Set output frequency registers
+    // These values depend on your desired LO frequency
+    // Refer to ADF4372 datasheet section on frequency calculation
+    ADF4372_WriteReg(hspi, 0x0010, 0x00); // INT word low
+    ADF4372_WriteReg(hspi, 0x0011, 0x00); // INT word high
+    ADF4372_WriteReg(hspi, 0x0012, 0x00); // FRAC1 word
+    ADF4372_WriteReg(hspi, 0x001E, 0x01); // Enable RF output
+}

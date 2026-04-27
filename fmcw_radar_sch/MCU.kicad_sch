@@ -5002,12 +5002,24 @@
 		(uuid "4c2b28a8-8ae7-4a33-a293-fcff02f498e6")
 	)
 	(no_connect
+		(at 175.26 69.85)
+		(uuid "83231f24-604a-4ba2-8573-75b61af58227")
+	)
+	(no_connect
 		(at 204.47 132.08)
 		(uuid "a1915abf-2867-41b2-be98-56d00b6de722")
 	)
 	(no_connect
 		(at 147.32 90.17)
 		(uuid "efb63a5b-6f15-47fc-9b24-0c5b200a033d")
+	)
+	(no_connect
+		(at 175.26 64.77)
+		(uuid "f2be4842-0ce0-4d74-a84d-df0418fd079d")
+	)
+	(no_connect
+		(at 175.26 67.31)
+		(uuid "ff45ed1c-bf3c-41a3-b924-7baa8c41a419")
 	)
 	(wire
 		(pts
@@ -6271,7 +6283,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 85.09) (xy 111.76 85.09)
+			(xy 107.95 85.09) (xy 111.76 85.09)
 		)
 		(stroke
 			(width 0)
@@ -6809,6 +6821,16 @@
 		)
 		(uuid "7640f78a-e1df-4519-8e89-7d8693bc8620")
 	)
+	(label "NSS6"
+		(at 151.13 52.07 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "76b0b096-c593-4be3-b0c1-33f7a1b50991")
+	)
 	(label "CONN_NRST"
 		(at 220.98 134.62 0)
 		(effects
@@ -6818,6 +6840,26 @@
 			(justify left bottom)
 		)
 		(uuid "771d5bea-4fba-4af3-a255-b024d2ba3350")
+	)
+	(label "NSS4"
+		(at 151.13 57.15 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8740d5e2-0f68-4755-9756-985da7611ecb")
+	)
+	(label "NSS3"
+		(at 151.13 59.69 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8d8bc482-7d38-433b-a097-fc213fd155b2")
 	)
 	(label "digital decoupling"
 		(at 100.33 29.21 0)
@@ -6858,6 +6900,16 @@
 			(justify left bottom)
 		)
 		(uuid "daebcd98-6ff0-411e-91e3-19980c76c84a")
+	)
+	(label "NSS5"
+		(at 151.13 54.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "dc4a47aa-fd21-4bbd-994d-6ab9bc95a8a4")
 	)
 	(global_label "MOSI2"
 		(shape input)
@@ -7103,7 +7155,7 @@
 	)
 	(global_label "DAC_NCLR"
 		(shape output)
-		(at 96.52 85.09 180)
+		(at 107.95 85.09 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7113,7 +7165,7 @@
 		)
 		(uuid "913380bd-a954-432e-9d4c-3f0f6f3fca92")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 84.701 85.0106 0)
+			(at 96.131 85.0106 0)
 			(effects
 				(font
 					(size 1.27 1.27)

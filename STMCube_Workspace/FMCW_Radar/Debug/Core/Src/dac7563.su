@@ -1,0 +1,2 @@
+../Core/Src/dac7563.c:13:6:DAC7563_Write	24	static
+../Core/Src/dac7563.c:31:6:DAC7563_Init	16	static

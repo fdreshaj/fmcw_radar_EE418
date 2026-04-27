@@ -1,0 +1,2 @@
+../Core/Src/adf4372.c:12:6:ADF4372_WriteReg	1
+../Core/Src/adf4372.c:24:6:ADF4372_Init	1

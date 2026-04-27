@@ -1,0 +1,28 @@
+/*
+ * dac7563.h
+ *
+ *  Created on: Apr 21, 2026
+ *      Author: justi
+ */
+
+#ifndef INC_DAC7563_H_
+#define INC_DAC7563_H_
+
+/* DAC7563 Commands from Table 17 */
+#define DAC_POWER_UP_A          0x40  // C2=1,C1=0,C0=0
+#define DAC_WRITE_UPDATE_A      0x18  // C2=0,C1=1,C0=1, A=DAC-A
+#define DAC_ENABLE_INT_REF      0x38  // Enable internal reference, gain=2
+
+/* Sawtooth parameters */
+#define DAC_MIN_CODE            2482  // 2.0V
+#define DAC_MAX_CODE            3476  // 2.8V
+
+/* Pin Definitions */
+#define DAC_LDAC_PIN     GPIO_PIN_10
+#define DAC_LDAC_PORT    GPIOB
+#define DAC_NCLR_PORT	GPIOB
+#define DAC_NCLR_PIN	GPIO_PIN_2
+#define NSS_DAC7563_GPIO_PORT GPIOB
+#define NSS_DAC7563_PIN GPIO_PIN_12
+
+#endif /* INC_DAC7563_H_ */

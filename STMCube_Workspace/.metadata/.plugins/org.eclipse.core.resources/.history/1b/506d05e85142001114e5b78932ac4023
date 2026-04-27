@@ -1,0 +1,90 @@
+/*
+ * adar2004.c
+ *
+ *  Created on: Apr 21, 2026
+ *      Author: justi
+ */
+
+// adar2004.c
+#include "adar2004.h"
+#include "stm32f1xx_hal.h"
+
+void ADAR2004_WriteReg(SPI_HandleTypeDef *hspi, uint16_t addr, uint8_t data)
+{
+    uint8_t tx[3];
+
+    // 16-bit address (write bit = 0) + 8-bit data
+    uint16_t addr_word = (ADAR2004_WRITE | (addr & 0x7FFF));
+
+    tx[0] = (addr_word >> 8) & 0xFF;   // Address high byte
+    tx[1] = addr_word & 0xFF;           // Address low byte
+    tx[2] = data;                        // Data byte
+
+    HAL_GPIO_WritePin(NSS_ADAR2004_GPIO_PORT, NSS_ADAR2004_PIN, GPIO_PIN_RESET);
+    HAL_SPI_Transmit(hspi, tx, 3, HAL_MAX_DELAY);
+    HAL_GPIO_WritePin(NSS_ADAR2004_GPIO_PORT, NSS_ADAR2004_PIN, GPIO_PIN_SET);
+}
+
+uint8_t ADAR2004_ReadReg(SPI_HandleTypeDef *hspi, uint16_t addr)
+{
+    uint8_t tx[3];
+    uint8_t rx[3] = {0};
+
+    // Set read bit
+    uint16_t addr_word = (ADAR2004_READ | (addr & 0x7FFF));
+
+    tx[0] = (addr_word >> 8) & 0xFF;
+    tx[1] = addr_word & 0xFF;
+    tx[2] = 0x00;                        // Dummy byte for read
+
+    HAL_GPIO_WritePin(NSS_ADAR2004_GPIO_Port, NSS_ADAR2004_Pin, GPIO_PIN_RESET);
+    HAL_SPI_TransmitReceive(hspi, tx, rx, 3, HAL_MAX_DELAY);
+    HAL_GPIO_WritePin(NSS_ADAR2004_GPIO_Port, NSS_ADAR2004_Pin, GPIO_PIN_SET);
+
+    return rx[2];                        // Data is in third byte
+}
+
+void ADAR2004_SetGain(SPI_HandleTypeDef *hspi, uint8_t gain)
+{
+    // Set gain for channels 1 and 2
+    ADAR2004_WriteReg(hspi, ADAR2004_REG_GAIN12, gain);
+    // Set gain for channels 3 and 4
+    ADAR2004_WriteReg(hspi, ADAR2004_REG_GAIN34, gain);
+}
+
+void ADAR2004_SetMultiplierBand(SPI_HandleTypeDef *hspi, uint8_t band_setting)
+{
+    ADAR2004_WriteReg(hspi, ADAR2004_REG_MULT_EN, band_setting);
+}
+
+void ADAR2004_Init(SPI_HandleTypeDef *hspi)
+{
+    // Software reset
+    ADAR2004_WriteReg(hspi, ADAR2004_REG_CONFIG, 0x81);
+    HAL_Delay(10);
+    ADAR2004_WriteReg(hspi, ADAR2004_REG_CONFIG, 0x00);
+    HAL_Delay(10);
+
+    // Set SPI to 4-wire mode (separate SDO pin)
+    ADAR2004_WriteReg(hspi, ADAR2004_REG_CONFIG, 0x18);
+
+    // Configure input buffer bias (default recommended values)
+    ADAR2004_WriteReg(hspi, ADAR2004_REG_INBUF, 0x55);
+
+    // Configure multiplier bias (default recommended values)
+    ADAR2004_WriteReg(hspi, ADAR2004_REG_MULT1, 0x55);
+    ADAR2004_WriteReg(hspi, ADAR2004_REG_MULT2, 0x55);
+
+    // Configure splitter bias (default recommended values)
+    ADAR2004_WriteReg(hspi, ADAR2004_REG_SPLITTER, 0x55);
+
+    // Set multiplier to high band for 7-8 GHz LO input
+    ADAR2004_SetMultiplierBand(hspi, ADAR2004_MULT_HIGHBAND);
+
+    // Enable all four receiver channels
+    ADAR2004_WriteReg(hspi, ADAR2004_REG_RX_EN, 0x0F);
+
+    // Set gain to ~31 dB on all channels
+    ADAR2004_SetGain(hspi, ADAR2004_GAIN_MID);
+}
+

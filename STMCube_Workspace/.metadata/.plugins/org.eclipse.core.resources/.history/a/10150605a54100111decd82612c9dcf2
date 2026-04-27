@@ -1,0 +1,47 @@
+/*
+ * dac7563.c
+ *
+ *  Created on: Apr 21, 2026
+ *      Author: justi
+ */
+
+/* DAC7563 Commands from Table 17 */
+#define DAC_POWER_UP_A          0x40  // C2=1,C1=0,C0=0
+#define DAC_WRITE_UPDATE_A      0x18  // C2=0,C1=1,C0=1, A=DAC-A
+#define DAC_ENABLE_INT_REF      0x38  // Enable internal reference, gain=2
+
+/* Sawtooth parameters */
+#define DAC_MIN_CODE            2482  // 2.0V
+#define DAC_MAX_CODE            3476  // 2.8V
+
+void DAC7563_Init(SPI_HandleTypeDef *hspi)
+{
+    // Initialize LDAC and SYNC high
+    HAL_GPIO_WritePin(DAC_LDAC_PORT, DAC_LDAC_PIN, GPIO_PIN_SET);
+    HAL_GPIO_WritePin(NSS_DAC7563_GPIO_Port, NSS_DAC7563_Pin, GPIO_PIN_SET);
+    HAL_Delay(1);
+
+    // Enable internal reference with gain=2
+    DAC7563_Write(hspi, DAC_ENABLE_INT_REF, 0x0001);
+    HAL_Delay(1);
+
+    // Power up DAC-A
+    DAC7563_Write(hspi, DAC_POWER_UP_A, 0x0001);
+    HAL_Delay(1);
+}
+
+void DAC7563_Write(SPI_HandleTypeDef *hspi, uint8_t command, uint16_t value)
+{
+    uint8_t tx[3];
+    tx[0] = command;
+    tx[1] = (value >> 8) & 0xFF;
+    tx[2] = value & 0xFF;
+
+    HAL_GPIO_WritePin(NSS_DAC7563_GPIO_Port, NSS_DAC7563_Pin, GPIO_PIN_RESET);
+    HAL_SPI_Transmit(hspi, tx, 3, HAL_MAX_DELAY);
+    HAL_GPIO_WritePin(NSS_DAC7563_GPIO_Port, NSS_DAC7563_Pin, GPIO_PIN_SET);
+
+    // Pulse LDAC to update output
+    HAL_GPIO_WritePin(DAC_LDAC_PORT, DAC_LDAC_PIN, GPIO_PIN_RESET);
+    HAL_GPIO_WritePin(DAC_LDAC_PORT, DAC_LDAC_PIN, GPIO_PIN_SET);
+}

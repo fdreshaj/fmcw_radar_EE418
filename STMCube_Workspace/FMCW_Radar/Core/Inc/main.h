@@ -57,6 +57,18 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define NSS4_ADAR2004_Pin GPIO_PIN_2
+#define NSS4_ADAR2004_GPIO_Port GPIOA
+#define NSS3_ADAR2001_Pin GPIO_PIN_3
+#define NSS3_ADAR2001_GPIO_Port GPIOA
+#define NSS_ADF4372_Pin GPIO_PIN_4
+#define NSS_ADF4372_GPIO_Port GPIOA
+#define DAC_NCLR_Pin GPIO_PIN_2
+#define DAC_NCLR_GPIO_Port GPIOB
+#define DAC_NLDAC_Pin GPIO_PIN_10
+#define DAC_NLDAC_GPIO_Port GPIOB
+#define NSS2_DAC7563_Pin GPIO_PIN_12
+#define NSS2_DAC7563_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 

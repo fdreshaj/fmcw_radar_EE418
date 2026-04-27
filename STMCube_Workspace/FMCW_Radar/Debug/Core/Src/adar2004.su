@@ -1,0 +1,5 @@
+../Core/Src/adar2004.c:12:6:ADAR2004_WriteReg	24	static
+../Core/Src/adar2004.c:28:9:ADAR2004_ReadReg	40	static
+../Core/Src/adar2004.c:47:6:ADAR2004_SetGain	16	static
+../Core/Src/adar2004.c:55:6:ADAR2004_SetMultiplierBand	16	static
+../Core/Src/adar2004.c:60:6:ADAR2004_Init	16	static

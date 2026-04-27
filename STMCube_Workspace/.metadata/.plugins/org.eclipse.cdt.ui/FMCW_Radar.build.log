@@ -1,0 +1,18 @@
+11:26:53 **** Incremental Build of configuration Debug for project FMCW_Radar ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/dac7563.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/dac7563.d" -MT"Core/Src/dac7563.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/dac7563.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "FMCW_Radar.elf" @"objects.list"   -mcpu=cortex-m3 -T"X:\School\Spring 2026\EE 4180\Project\fmcw_radar_EE418\STMCube_Workspace\FMCW_Radar\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FMCW_Radar.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: FMCW_Radar.elf
+ 
+arm-none-eabi-size  FMCW_Radar.elf 
+arm-none-eabi-objdump -h -S FMCW_Radar.elf  > "FMCW_Radar.list"
+   text	   data	    bss	    dec	    hex	filename
+  11500	     16	   2624	  14140	   373c	FMCW_Radar.elf
+Finished building: default.size.stdout
+ 
+Finished building: FMCW_Radar.list
+ 
+
+11:27:07 Build Finished. 0 errors, 0 warnings. (took 13s.562ms)
+

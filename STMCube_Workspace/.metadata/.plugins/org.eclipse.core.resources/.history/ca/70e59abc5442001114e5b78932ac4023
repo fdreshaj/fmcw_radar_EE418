@@ -1,0 +1,51 @@
+/*
+ * adar2004.h
+ *
+ *  Created on: Apr 21, 2026
+ *      Author: justi
+ */
+
+#ifndef INC_ADAR2004_H_
+#define INC_ADAR2004_H_
+
+
+#include "stm32f1xx_hal.h"
+
+/* Pin Values*/
+#define NSS_ADAR2004_GPIO_PORT		GPIOA
+#define NSS_ADAR2004_PIN			GPIO_PIN_2
+
+/* SPI Transaction Parameters */
+#define ADAR2004_WRITE          0x0000  // Write bit
+#define ADAR2004_READ           0x8000  // Read bit
+
+/* Register Addresses */
+#define ADAR2004_REG_CONFIG     0x000   // Configuration register
+#define ADAR2004_REG_MULT1      0x011   // Multiplier bias 1
+#define ADAR2004_REG_MULT2      0x012   // Multiplier bias 2
+#define ADAR2004_REG_INBUF      0x013   // Input buffer bias
+#define ADAR2004_REG_SPLITTER   0x014   // Splitter bias
+#define ADAR2004_REG_MULT_EN    0x070   // Multiplier enable mode 0
+#define ADAR2004_REG_RX_EN      0x040   // Receiver enable mode 0
+#define ADAR2004_REG_GAIN12     0x041   // Gain channels 1 and 2
+#define ADAR2004_REG_GAIN34     0x042   // Gain channels 3 and 4
+
+/* Multiplier Band Settings from Table 7 */
+/* LO input 6.25-7.5 GHz → High band active, BPF high */
+#define ADAR2004_MULT_HIGHBAND  0xCE
+
+/* Gain Settings */
+#define ADAR2004_GAIN_MAX       0x77    // 41 dB all channels
+#define ADAR2004_GAIN_MID       0x33    // ~31 dB all channels
+#define ADAR2004_GAIN_MIN       0x00    // 21 dB all channels
+
+/* Function Prototypes */
+void ADAR2004_Init(SPI_HandleTypeDef *hspi);
+void ADAR2004_WriteReg(SPI_HandleTypeDef *hspi, uint16_t addr, uint8_t data);
+uint8_t ADAR2004_ReadReg(SPI_HandleTypeDef *hspi, uint16_t addr);
+void ADAR2004_SetGain(SPI_HandleTypeDef *hspi, uint8_t gain);
+void ADAR2004_SetMultiplierBand(SPI_HandleTypeDef *hspi, uint8_t band_setting);
+
+#endif /* INC_ADAR2004_H_ */
+
+#endif /* INC_ADAR2004_H_ */
