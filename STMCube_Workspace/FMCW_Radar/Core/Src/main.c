@@ -16,8 +16,6 @@
   ******************************************************************************
   */
 /* USER CODE END Header */
-
-
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 
@@ -32,15 +30,12 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-
+//uint16_t test_dac_value = 4000;
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-#define DAC_MIN_CODE 2482 // 2.0V
-#define DAC_MAX_CODE        3476    // 2.8V
-#define CHIRP_STEPS         994     // steps per chirp
-#define CHIRP_PERIOD_MS     1000    // 1 second between chirps
+
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -59,10 +54,16 @@ PCD_HandleTypeDef hpcd_USB_FS;
 
 /* USER CODE BEGIN PV */
 uint16_t dac_value = DAC_MIN_CODE;
-uint8_t dac_update_flag = 0;
+uint16_t dac_increment = (DAC_MAX_CODE - DAC_MIN_CODE) / CHIRP_STEPS; // 2
+volatile uint8_t dac_update_flag = 0;
+volatile uint8_t dac_reset_flag = 0;
+volatile uint8_t start_chirp_flag = 0;
 uint8_t chirp_active = 0;
 uint32_t chirp_step_count = 0;
 uint32_t idle_count = 0;
+
+volatile uint32_t reset_count = 0;   // debug counter
+volatile uint32_t update_count = 0;  // debug counter
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -130,16 +131,31 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  // Update DAC Output Value of VTune
-	  if (dac_update_flag)
-	     {
-	         dac_update_flag = 0;
-	         DAC7563_Write(&hspi2, DAC_WRITE_UPDATE_A, dac_value);
-	     }
-    /* USER CODE END WHILE */
+      if (dac_reset_flag)
+      {
+          dac_reset_flag = 0;
+          dac_update_flag = 0;
+          reset_count++;  // increment every time reset fires
+          DAC7563_Write(&hspi2, DAC_WRITE_UPDATE_A, DAC_MIN_CODE);
+      }
+      else if (dac_update_flag)
+      {
+          dac_update_flag = 0;
+          update_count++;  // increment every time update fires
+          DAC7563_Write(&hspi2, DAC_WRITE_UPDATE_A, dac_value);
+      }
 
-    /* USER CODE BEGIN 3 */
+      if (start_chirp_flag)
+      {
+          start_chirp_flag = 0;
+          dac_value = DAC_MIN_CODE;
+          HAL_TIM_Base_Start_IT(&htim3);
+      }
   }
+  /* USER CODE END WHILE */
+
+  /* USER CODE BEGIN 3 */
+
   /* USER CODE END 3 */
 }
 
@@ -249,8 +265,8 @@ static void MX_SPI2_Init(void)
   hspi2.Init.DataSize = SPI_DATASIZE_8BIT;
   hspi2.Init.CLKPolarity = SPI_POLARITY_LOW;
   hspi2.Init.CLKPhase = SPI_PHASE_2EDGE;
-  hspi2.Init.NSS = SPI_NSS_HARD_OUTPUT;
-  hspi2.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_2;
+  hspi2.Init.NSS = SPI_NSS_SOFT;
+  hspi2.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_64;
   hspi2.Init.FirstBit = SPI_FIRSTBIT_MSB;
   hspi2.Init.TIMode = SPI_TIMODE_DISABLE;
   hspi2.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
@@ -284,9 +300,9 @@ static void MX_TIM3_Init(void)
 
   /* USER CODE END TIM3_Init 1 */
   htim3.Instance = TIM3;
-  htim3.Init.Prescaler = 7;
+  htim3.Init.Prescaler = 47;
   htim3.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim3.Init.Period = 5;
+  htim3.Init.Period = 127;
   htim3.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim3.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_ENABLE;
   if (HAL_TIM_Base_Init(&htim3) != HAL_OK)
@@ -298,7 +314,7 @@ static void MX_TIM3_Init(void)
   {
     Error_Handler();
   }
-  sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+  sMasterConfig.MasterOutputTrigger = TIM_TRGO_UPDATE;
   sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
   if (HAL_TIMEx_MasterConfigSynchronization(&htim3, &sMasterConfig) != HAL_OK)
   {
@@ -331,7 +347,7 @@ static void MX_TIM4_Init(void)
   htim4.Instance = TIM4;
   htim4.Init.Prescaler = 23999;
   htim4.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim4.Init.Period = 3;
+  htim4.Init.Period = 15;
   htim4.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim4.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim4) != HAL_OK)
@@ -407,13 +423,13 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(GPIOA, NSS4_ADAR2004_Pin|NSS3_ADAR2001_Pin|NSS_ADF4372_Pin, GPIO_PIN_SET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, DAC_NCLR_Pin|DAC_NLDAC_Pin, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(GPIOB, DAC_NCLR_Pin|DAC_NLDAC_Pin|NSS_DAC7563_Pin, GPIO_PIN_SET);
 
   /*Configure GPIO pins : NSS4_ADAR2004_Pin NSS3_ADAR2001_Pin NSS_ADF4372_Pin */
   GPIO_InitStruct.Pin = NSS4_ADAR2004_Pin|NSS3_ADAR2001_Pin|NSS_ADF4372_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_OD;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_MEDIUM;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
   /*Configure GPIO pins : DAC_NCLR_Pin DAC_NLDAC_Pin */
@@ -422,6 +438,13 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : NSS_DAC7563_Pin */
+  GPIO_InitStruct.Pin = NSS_DAC7563_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_MEDIUM;
+  HAL_GPIO_Init(NSS_DAC7563_GPIO_Port, &GPIO_InitStruct);
 
   /* USER CODE BEGIN MX_GPIO_Init_2 */
 
@@ -433,27 +456,25 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
     if (htim->Instance == TIM3)
     {
-        dac_update_flag = 1;
-        dac_value++;
-
-        if (dac_value > DAC_MAX_CODE)
+        if (dac_value >= DAC_MAX_CODE)
         {
-            // Chirp complete
+            dac_update_flag = 0;
+            dac_reset_flag = 1;
             dac_value = DAC_MIN_CODE;
-            dac_update_flag = 1;  // Reset DAC to minimum voltage
-            HAL_TIM_Base_Stop_IT(&htim3);  // Stop chirp timer
+            HAL_TIM_Base_Stop_IT(&htim3);
+            HAL_TIM_Base_Start_IT(&htim4);
+        }
+        else
+        {
+            dac_value += dac_increment;
+            dac_update_flag = 1;
         }
     }
 
     if (htim->Instance == TIM4)
     {
-        idle_count++;
-        if (idle_count >= CHIRP_PERIOD_MS)
-        {
-            idle_count = 0;
-            dac_value = DAC_MIN_CODE;
-            HAL_TIM_Base_Start_IT(&htim3);  // Start next chirp
-        }
+        HAL_TIM_Base_Stop_IT(&htim4);
+        start_chirp_flag = 1;  // Signal main loop to start chirp
     }
 }
 /* USER CODE END 4 */

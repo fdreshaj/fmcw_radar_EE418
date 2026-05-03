@@ -11,13 +11,15 @@
 #include "stm32f1xx_hal.h"
 
 /* DAC7563 Commands from Table 17 */
-#define DAC_POWER_UP_A          0x40  // C2=1,C1=0,C0=0
+#define DAC_POWER_UP_A          0x20  // C2=1,C1=0,C0=0
 #define DAC_WRITE_UPDATE_A      0x18  // C2=0,C1=1,C0=1, A=DAC-A
 #define DAC_ENABLE_INT_REF      0x38  // Enable internal reference, gain=2
 
 /* Sawtooth parameters */
-#define DAC_MIN_CODE            2482  // 2.0V
-#define DAC_MAX_CODE            3476  // 2.8V
+// Maximum Possible DAC Code: 2703
+#define DAC_MIN_CODE 500 // 1.83V
+#define DAC_MAX_CODE        2500    // 3.052V
+#define CHIRP_STEPS         750     // steps per chirp
 
 /* Pin Definitions */
 #define DAC_LDAC_PIN     GPIO_PIN_10
