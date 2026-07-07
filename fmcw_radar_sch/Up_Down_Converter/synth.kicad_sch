@@ -4181,7 +4181,7 @@
 			(uuid "acaa5bec-f872-4cfe-9779-ef4594581af4")
 		)
 		(instances
-			(project ""
+			(project "Up_Down_Converter"
 				(path "/ecdac040-d2fc-4837-bd77-36dd5bdda894/b354f215-8b19-442f-bb4f-899736cc8118"
 					(reference "R22")
 					(unit 1)
@@ -4318,7 +4318,7 @@
 			(uuid "a7c26b8a-19d6-4d98-ba3f-f937c290c9f0")
 		)
 		(instances
-			(project ""
+			(project "Up_Down_Converter"
 				(path "/ecdac040-d2fc-4837-bd77-36dd5bdda894/b354f215-8b19-442f-bb4f-899736cc8118"
 					(reference "C1")
 					(unit 1)
@@ -5128,7 +5128,7 @@
 			(uuid "c6bdeb13-c208-4bcb-8acb-3e32493a4120")
 		)
 		(instances
-			(project ""
+			(project "Up_Down_Converter"
 				(path "/ecdac040-d2fc-4837-bd77-36dd5bdda894/b354f215-8b19-442f-bb4f-899736cc8118"
 					(reference "C44")
 					(unit 1)

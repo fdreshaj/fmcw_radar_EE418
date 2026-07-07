@@ -2388,7 +2388,7 @@
 			(uuid "792ee6ee-5431-47d4-aa50-7d185ddb81f3")
 		)
 		(instances
-			(project ""
+			(project "Up_Down_Converter"
 				(path "/ecdac040-d2fc-4837-bd77-36dd5bdda894/b354f215-8b19-442f-bb4f-899736cc8118/ff92a75f-d023-478e-8679-15086c6dbc7b"
 					(reference "J13")
 					(unit 1)

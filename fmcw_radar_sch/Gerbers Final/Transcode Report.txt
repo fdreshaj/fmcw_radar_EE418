@@ -1,0 +1,276 @@
+
+
+   ---- Transcoding 'C:\Users\fdreshaj\AppData\Local\Temp\PentaLogix\ImportZip\39a15b58-ac77-4969-bc55-ada148927b6c\Up_Down_Converter-F_Paste.gbr' ----   Mon Jul  6 14:43:33 2026
+
+D11   --> D100
+D12   --> D101
+D13   --> D102
+D14   --> D103
+D16   --> D104
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\fdreshaj\AppData\Local\Temp\PentaLogix\ImportZip\39a15b58-ac77-4969-bc55-ada148927b6c\Up_Down_Converter-F_Mask.gbr' ----   Mon Jul  6 14:43:33 2026
+
+D11   --> D105
+D12   --> D106
+D14   --> D107
+D15   --> D108
+D16   --> D109
+D17   --> D110
+D18   --> D111
+D19   --> D112
+D20   --> D113
+D21   --> D114
+D22   --> D115
+D23   --> D116
+D24   --> D117
+D25   --> D118
+D26   --> D119
+D27   --> D120
+D28   --> D121
+D29   --> D122
+D30   --> D123
+D31   --> D124
+D32   --> D125
+D33   --> D126
+D34   --> D127
+D35   --> D128
+D36   --> D129
+D37   --> D130
+D38   --> D131
+D39   --> D132
+D40   --> D133
+D41   --> D134
+D42   --> D135
+D43   --> D136
+D44   --> D137
+D45   --> D138
+D46   --> D139
+D47   --> D140
+D48   --> D141
+D49   --> D142
+D50   --> D143
+D51   --> D144
+D52   --> D145
+D53   --> D146
+D54   --> D147
+D55   --> D148
+D56   --> D149
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\fdreshaj\AppData\Local\Temp\PentaLogix\ImportZip\39a15b58-ac77-4969-bc55-ada148927b6c\Up_Down_Converter-F_Cu.gbr' ----   Mon Jul  6 14:43:33 2026
+
+D10   --> D150
+D12   --> D151
+D13   --> D152
+D15   --> D153
+D16   --> D154
+D17   --> D155
+D18   --> D156
+D19   --> D157
+D20   --> D158
+D21   --> D159
+D22   --> D160
+D23   --> D161
+D24   --> D162
+D25   --> D163
+D26   --> D164
+D27   --> D165
+D28   --> D166
+D29   --> D167
+D30   --> D168
+D31   --> D169
+D32   --> D170
+D33   --> D171
+D34   --> D172
+D35   --> D173
+D36   --> D174
+D37   --> D175
+D38   --> D176
+D39   --> D177
+D40   --> D178
+D41   --> D179
+D42   --> D180
+D43   --> D181
+D44   --> D182
+D45   --> D183
+D46   --> D184
+D47   --> D185
+D48   --> D186
+D49   --> D187
+D50   --> D188
+D51   --> D189
+D52   --> D190
+D53   --> D191
+D54   --> D192
+D55   --> D193
+D56   --> D194
+D57   --> D195
+D58   --> D196
+D59   --> D197
+D60   --> D198
+D61   --> D199
+D62   --> D200
+D63   --> D201
+D64   --> D202
+D65   --> D203
+D66   --> D204
+D67   --> D205
+D68   --> D206
+D69   --> D207
+D70   --> D208
+D71   --> D209
+D72   --> D210
+D73   --> D211
+D74   --> D212
+D75   --> D213
+D76   --> D214
+D77   --> D215
+D78   --> D216
+D79   --> D217
+D80   --> D218
+D81   --> D219
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\fdreshaj\AppData\Local\Temp\PentaLogix\ImportZip\39a15b58-ac77-4969-bc55-ada148927b6c\Up_Down_Converter-In1_Cu.gbr' ----   Mon Jul  6 14:43:33 2026
+
+D10   --> D220
+D11   --> D221
+D12   --> D222
+D13   --> D223
+D14   --> D224
+D15   --> D225
+D16   --> D226
+D17   --> D227
+D18   --> D228
+D19   --> D229
+D20   --> D230
+D21   --> D231
+D22   --> D232
+D23   --> D233
+D24   --> D234
+D25   --> D235
+D26   --> D236
+D27   --> D237
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\fdreshaj\AppData\Local\Temp\PentaLogix\ImportZip\39a15b58-ac77-4969-bc55-ada148927b6c\Up_Down_Converter-In2_Cu.gbr' ----   Mon Jul  6 14:43:33 2026
+
+D10   --> D238
+D11   --> D239
+D12   --> D240
+D13   --> D241
+D14   --> D242
+D15   --> D243
+D16   --> D244
+D17   --> D245
+D18   --> D246
+D19   --> D247
+D20   --> D248
+D21   --> D249
+D22   --> D250
+D23   --> D251
+D24   --> D252
+D25   --> D253
+D26   --> D254
+D27   --> D255
+D28   --> D256
+D29   --> D257
+D30   --> D258
+D31   --> D259
+D32   --> D260
+D33   --> D261
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\fdreshaj\AppData\Local\Temp\PentaLogix\ImportZip\39a15b58-ac77-4969-bc55-ada148927b6c\Up_Down_Converter-B_Cu.gbr' ----   Mon Jul  6 14:43:33 2026
+
+D10   --> D262
+D11   --> D263
+D12   --> D264
+D13   --> D265
+D14   --> D266
+D15   --> D267
+D16   --> D268
+D17   --> D269
+D18   --> D270
+D19   --> D271
+D20   --> D272
+D21   --> D273
+D22   --> D274
+D23   --> D275
+D24   --> D276
+D25   --> D277
+D26   --> D278
+D27   --> D279
+D28   --> D280
+D29   --> D281
+D30   --> D282
+D31   --> D283
+D32   --> D284
+D33   --> D285
+D34   --> D286
+D35   --> D287
+D36   --> D288
+D37   --> D289
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\fdreshaj\AppData\Local\Temp\PentaLogix\ImportZip\39a15b58-ac77-4969-bc55-ada148927b6c\Up_Down_Converter-B_Mask.gbr' ----   Mon Jul  6 14:43:33 2026
+
+D10   --> D290
+D11   --> D291
+D12   --> D292
+D13   --> D293
+D14   --> D294
+D15   --> D295
+D16   --> D296
+D17   --> D297
+D18   --> D298
+D19   --> D299
+D20   --> D300
+D21   --> D301
+D22   --> D302
+D23   --> D303
+D24   --> D304
+D25   --> D305
+D26   --> D306
+D27   --> D307
+D28   --> D308
+D29   --> D309
+D30   --> D310
+D31   --> D311
+D32   --> D312
+D33   --> D313
+D34   --> D314
+D35   --> D315
+D36   --> D316
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\fdreshaj\AppData\Local\Temp\PentaLogix\ImportZip\39a15b58-ac77-4969-bc55-ada148927b6c\Up_Down_Converter-B_Paste.gbr' ----   Mon Jul  6 14:43:33 2026
+
+D10   --> D317
+D11   --> D318
+D12   --> D319
+D13   --> D320
+D14   --> D321
+D15   --> D322
+D16   --> D323
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\fdreshaj\AppData\Local\Temp\PentaLogix\ImportZip\39a15b58-ac77-4969-bc55-ada148927b6c\Up_Down_Converter-B_Silkscreen.gbr' ----   Mon Jul  6 14:43:33 2026
+
+D10   --> D324
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\fdreshaj\AppData\Local\Temp\PentaLogix\ImportZip\39a15b58-ac77-4969-bc55-ada148927b6c\Up_Down_Converter-Edge_Cuts.gbr' ----   Mon Jul  6 14:43:33 2026
+
+D10   --> D325
+-----------------------------------------------------------------

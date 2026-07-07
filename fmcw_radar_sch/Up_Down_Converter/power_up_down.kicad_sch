@@ -6917,7 +6917,7 @@
 			(uuid "91675a3b-1642-4232-8051-5c92ef462621")
 		)
 		(instances
-			(project ""
+			(project "Up_Down_Converter"
 				(path "/ecdac040-d2fc-4837-bd77-36dd5bdda894/14e8dd72-d006-4ebe-b338-998bd9f50157"
 					(reference "#PWR052")
 					(unit 1)
